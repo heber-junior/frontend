@@ -5,5 +5,5 @@ services:
 before_install:
   docker build -t hbgjr/frontend -f Dockerfile.dev .
 
-scripts:
+script:
   docker run hbgjr/frontend npm run test -- --coverage
